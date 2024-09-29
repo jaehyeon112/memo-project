@@ -1,0 +1,28 @@
+.MemoItem {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 5px 8px;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.MeomoItem_delete-button {
+  background: none;
+  color: red;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  cursor: pointer;
+  display: none;
+}
+.MemoItem:hover .MeomoItem_delete-button {
+  display: inline-block;
+}
+
+.selected {
+  font-weight: 500;
+  background-color: rgba(100, 100, 100, 0.5);
+}
